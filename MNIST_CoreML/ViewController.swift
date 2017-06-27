@@ -141,8 +141,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             print(error)
         }
     }
-    
-
 
 }
 

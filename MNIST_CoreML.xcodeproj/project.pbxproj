@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492E78041F02A8C10046D5E1 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E78031F02A8C10046D5E1 /* DrawViewController.swift */; };
 		496CB4E11F02980600645B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CB4E01F02980600645B8E /* AppDelegate.swift */; };
 		496CB4E31F02980600645B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CB4E21F02980600645B8E /* ViewController.swift */; };
 		496CB4E61F02980600645B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496CB4E41F02980600645B8E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492E78031F02A8C10046D5E1 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		496CB4DD1F02980600645B8E /* MNIST_CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNIST_CoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496CB4E01F02980600645B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496CB4E21F02980600645B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				496CB4E71F02980600645B8E /* Assets.xcassets */,
 				496CB4E91F02980600645B8E /* LaunchScreen.storyboard */,
 				496CB4EC1F02980600645B8E /* Info.plist */,
+				492E78031F02A8C10046D5E1 /* DrawViewController.swift */,
 			);
 			path = MNIST_CoreML;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				496CB4E31F02980600645B8E /* ViewController.swift in Sources */,
 				496CB4E11F02980600645B8E /* AppDelegate.swift in Sources */,
+				492E78041F02A8C10046D5E1 /* DrawViewController.swift in Sources */,
 				496CB4F31F0298D200645B8E /* MNISTClassifier.mlmodel in Sources */,
 				496CB4F51F02A10F00645B8E /* CGUtils.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oVf-00-cMn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="916-kh-Lhe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,9 +10,83 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="IPk-Sq-C3z">
+            <objects>
+                <viewController id="916-kh-Lhe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8DB-te-ofy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFL-oa-2sW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pDt-HH-HcC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evs-4p-RwV">
+                                <rect key="frame" x="115" y="151" width="145" height="30"/>
+                                <state key="normal" title="Use Photos"/>
+                                <connections>
+                                    <segue destination="oVf-00-cMn" kind="show" id="IG0-g1-308"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7By-xk-9L0">
+                                <rect key="frame" x="92" y="475" width="190" height="30"/>
+                                <state key="normal" title="Draw a Number"/>
+                                <connections>
+                                    <segue destination="CVj-Db-DqZ" kind="show" id="GqK-GZ-LvK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="evs-4p-RwV" firstAttribute="centerX" secondItem="pDt-HH-HcC" secondAttribute="centerX" id="K0U-ps-a1e"/>
+                            <constraint firstItem="ZFL-oa-2sW" firstAttribute="top" secondItem="7By-xk-9L0" secondAttribute="bottom" constant="162" id="K9m-pE-jpj"/>
+                            <constraint firstItem="evs-4p-RwV" firstAttribute="leading" secondItem="7By-xk-9L0" secondAttribute="leading" constant="23" id="UZQ-ii-JEW"/>
+                            <constraint firstItem="evs-4p-RwV" firstAttribute="leading" secondItem="pDt-HH-HcC" secondAttribute="leadingMargin" constant="99" id="hb2-N3-7WD"/>
+                            <constraint firstItem="evs-4p-RwV" firstAttribute="top" secondItem="8DB-te-ofy" secondAttribute="bottom" constant="131" id="jge-dK-d8u"/>
+                            <constraint firstItem="evs-4p-RwV" firstAttribute="trailing" secondItem="7By-xk-9L0" secondAttribute="trailing" constant="-22" id="wdN-Sk-pGg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHa-Cb-61I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-23.838080959520241"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="eEh-qZ-fCh">
+            <objects>
+                <viewController id="CVj-Db-DqZ" customClass="DrawViewController" customModule="MNIST_CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nty-CW-28e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ms7-ov-ti9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uyO-0U-ruq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xw0-dp-To3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="509"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xw0-dp-To3" firstAttribute="leading" secondItem="uyO-0U-ruq" secondAttribute="leading" id="4s2-cm-h7P"/>
+                            <constraint firstItem="xw0-dp-To3" firstAttribute="top" secondItem="uyO-0U-ruq" secondAttribute="top" id="KBp-Uz-6I7"/>
+                            <constraint firstItem="Ms7-ov-ti9" firstAttribute="top" secondItem="xw0-dp-To3" secondAttribute="bottom" constant="158" id="ZIL-1e-e2h"/>
+                            <constraint firstAttribute="trailing" secondItem="xw0-dp-To3" secondAttribute="trailing" id="twW-oH-XEj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tempImageView" destination="xw0-dp-To3" id="bQ4-oV-jFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOz-wK-4LM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="315.29235382308849"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="rgk-uI-STW">
             <objects>
-                <viewController id="oVf-00-cMn" customClass="ViewController" customModule="Vision_ML_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oVf-00-cMn" customClass="ViewController" customModule="MNIST_CoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EOh-Dv-fs4"/>
                         <viewControllerLayoutGuide type="bottom" id="iBZ-mS-MSE"/>
@@ -83,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICX-lS-eFA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="134"/>
+            <point key="canvasLocation" x="777" y="-409"/>
         </scene>
     </scenes>
 </document>
