@@ -13,6 +13,7 @@
 		496CB4E81F02980600645B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496CB4E71F02980600645B8E /* Assets.xcassets */; };
 		496CB4EB1F02980600645B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496CB4E91F02980600645B8E /* LaunchScreen.storyboard */; };
 		496CB4F31F0298D200645B8E /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 496CB4F21F0298D200645B8E /* MNISTClassifier.mlmodel */; };
+		496CB4F51F02A10F00645B8E /* CGUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CB4F41F02A10F00645B8E /* CGUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		496CB4EA1F02980600645B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496CB4EC1F02980600645B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496CB4F21F0298D200645B8E /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MNISTClassifier.mlmodel; path = "../../../Downloads/ImageClassificationwithVisionandCoreML-master/Vision+ML Example/MNISTClassifier.mlmodel"; sourceTree = "<group>"; };
+		496CB4F41F02A10F00645B8E /* CGUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				496CB4E01F02980600645B8E /* AppDelegate.swift */,
 				496CB4E21F02980600645B8E /* ViewController.swift */,
+				496CB4F41F02A10F00645B8E /* CGUtils.swift */,
 				496CB4E41F02980600645B8E /* Main.storyboard */,
 				496CB4F21F0298D200645B8E /* MNISTClassifier.mlmodel */,
 				496CB4E71F02980600645B8E /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				496CB4E31F02980600645B8E /* ViewController.swift in Sources */,
 				496CB4E11F02980600645B8E /* AppDelegate.swift in Sources */,
 				496CB4F31F0298D200645B8E /* MNISTClassifier.mlmodel in Sources */,
+				496CB4F51F02A10F00645B8E /* CGUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 				496CB4F11F02980600645B8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
