@@ -23,7 +23,6 @@ class DrawViewController: UIViewController {
     
     @IBOutlet weak var tempImageView: UIImageView!
     @IBOutlet weak var classificationLabel: UILabel!
-    @IBOutlet weak var correctedImageView: UIImageView!
     @IBAction func takePicture(_ sender: Any) {
     UIGraphicsBeginImageContext(tempImageView.frame.size)
         tempImageView.layer.render(in: UIGraphicsGetCurrentContext()!)

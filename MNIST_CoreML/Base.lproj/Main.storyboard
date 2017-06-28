@@ -64,18 +64,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xw0-dp-To3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
                                 <color key="tintColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaF-7D-Cb3">
-                                <rect key="frame" x="71" y="391" width="233" height="30"/>
+                                <rect key="frame" x="71" y="616" width="233" height="30"/>
                                 <state key="normal" title="Take Snapshot of Number"/>
                                 <connections>
                                     <action selector="takePicture:" destination="CVj-Db-DqZ" eventType="touchUpInside" id="FJA-yg-emr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-SQ-vFz">
-                                <rect key="frame" x="3" y="421" width="368" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-SQ-vFz">
+                                <rect key="frame" x="3" y="646" width="368" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="eku-em-WO7"/>
                                 </constraints>
@@ -83,31 +83,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jm2-te-dlz">
-                                <rect key="frame" x="3" y="450" width="372" height="217"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xw0-dp-To3" firstAttribute="leading" secondItem="uyO-0U-ruq" secondAttribute="leading" id="4s2-cm-h7P"/>
                             <constraint firstItem="eaF-7D-Cb3" firstAttribute="centerX" secondItem="xw0-dp-To3" secondAttribute="centerX" id="Dyj-9g-PhI"/>
                             <constraint firstItem="dUj-SQ-vFz" firstAttribute="top" secondItem="eaF-7D-Cb3" secondAttribute="bottom" id="EgQ-fB-FqP"/>
-                            <constraint firstItem="jm2-te-dlz" firstAttribute="top" secondItem="dUj-SQ-vFz" secondAttribute="bottom" constant="8" symbolic="YES" id="Ffp-Zq-JQ1"/>
                             <constraint firstItem="eaF-7D-Cb3" firstAttribute="centerX" secondItem="dUj-SQ-vFz" secondAttribute="centerX" id="G5F-PD-wHJ"/>
                             <constraint firstItem="xw0-dp-To3" firstAttribute="top" secondItem="uyO-0U-ruq" secondAttribute="top" id="KBp-Uz-6I7"/>
-                            <constraint firstItem="jm2-te-dlz" firstAttribute="trailing" secondItem="xw0-dp-To3" secondAttribute="trailing" id="Mmr-Sm-hrv"/>
-                            <constraint firstItem="Ms7-ov-ti9" firstAttribute="top" secondItem="xw0-dp-To3" secondAttribute="bottom" constant="278" id="ZIL-1e-e2h"/>
-                            <constraint firstItem="dUj-SQ-vFz" firstAttribute="leading" secondItem="jm2-te-dlz" secondAttribute="leading" id="gMp-mT-3tJ"/>
+                            <constraint firstItem="Ms7-ov-ti9" firstAttribute="top" secondItem="xw0-dp-To3" secondAttribute="bottom" constant="59" id="ZIL-1e-e2h"/>
                             <constraint firstItem="dUj-SQ-vFz" firstAttribute="leading" secondItem="uyO-0U-ruq" secondAttribute="leadingMargin" constant="-13" id="haM-F2-4xU"/>
                             <constraint firstAttribute="trailing" secondItem="xw0-dp-To3" secondAttribute="trailing" id="twW-oH-XEj"/>
-                            <constraint firstItem="eaF-7D-Cb3" firstAttribute="top" secondItem="xw0-dp-To3" secondAttribute="bottom" constant="2" id="wRR-qv-Z9O"/>
+                            <constraint firstItem="eaF-7D-Cb3" firstAttribute="top" secondItem="xw0-dp-To3" secondAttribute="bottom" constant="8" id="wRR-qv-Z9O"/>
                             <constraint firstItem="eaF-7D-Cb3" firstAttribute="leading" secondItem="uyO-0U-ruq" secondAttribute="leadingMargin" constant="55" id="yki-sk-Fdl"/>
-                            <constraint firstItem="jm2-te-dlz" firstAttribute="bottom" secondItem="Ms7-ov-ti9" secondAttribute="top" id="zBv-lY-wOd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="classificationLabel" destination="dUj-SQ-vFz" id="9pw-oh-OBu"/>
-                        <outlet property="correctedImageView" destination="jm2-te-dlz" id="sHZ-i9-gcv"/>
                         <outlet property="tempImageView" destination="xw0-dp-To3" id="bQ4-oV-jFF"/>
                     </connections>
                 </viewController>
