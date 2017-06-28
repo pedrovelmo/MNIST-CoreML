@@ -62,13 +62,13 @@
 			children = (
 				496CB4E01F02980600645B8E /* AppDelegate.swift */,
 				496CB4E21F02980600645B8E /* ViewController.swift */,
+				492E78031F02A8C10046D5E1 /* DrawViewController.swift */,
 				496CB4F41F02A10F00645B8E /* CGUtils.swift */,
 				496CB4E41F02980600645B8E /* Main.storyboard */,
 				496CB4F21F0298D200645B8E /* MNISTClassifier.mlmodel */,
 				496CB4E71F02980600645B8E /* Assets.xcassets */,
 				496CB4E91F02980600645B8E /* LaunchScreen.storyboard */,
 				496CB4EC1F02980600645B8E /* Info.plist */,
-				492E78031F02A8C10046D5E1 /* DrawViewController.swift */,
 			);
 			path = MNIST_CoreML;
 			sourceTree = "<group>";
